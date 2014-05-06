@@ -29,3 +29,9 @@ data_proportion = function(data, k){
 	split_data = data.frame(total, attr1, attr2)
 	return(split_data)
 }
+
+
+data = data_set = read.table('wdbc.data', sep=",")
+data = cbind(data_set[2:32])
+data_proportion(data, 13)
+
